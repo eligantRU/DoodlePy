@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a506e2-88c2-44dc-8906-cb842aaf0519" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/setup.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/doodle.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/game.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sheet.py" afterPath="" />
