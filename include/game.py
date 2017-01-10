@@ -30,9 +30,7 @@ class Game:
                 self.__window.close()
 
     def check_keyboard_events(self, event):
-        is_need_update1 = self.check_key_pressed(event)
-        is_need_update2 = self.check_key_released(event)
-        if is_need_update1 or is_need_update2:
+        if self.check_key_pressed(event) or self.check_key_released(event):
             self.__hero.update_direction(self.__isLeft, self.__isRight)
 
     def check_key_pressed(self, event):
