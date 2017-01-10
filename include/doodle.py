@@ -30,13 +30,13 @@ class Doodle:
 
     def update_direction(self, is_left, is_right):
         if is_left and is_right:
-            self.set_direction(0)
+            self.set_direction(sheet.DirectionX.NONE)
         elif is_left:
-            self.set_direction(1)
+            self.set_direction(sheet.DirectionX.LEFT)
         elif is_right:
-            self.set_direction(2)
+            self.set_direction(sheet.DirectionX.RIGHT)
         else:
-            self.set_direction(0)
+            self.set_direction(sheet.DirectionX.NONE)
 
     def set_position(self, pos):
         self.__body.position = pos
@@ -53,8 +53,8 @@ class Doodle:
     def get_horizontal_offset(self):
         position_x = 0
         direction = self.get_direction()
-        if direction == 1:
+        if direction == sheet.DirectionX.LEFT:
             position_x -= sheet.STEP
-        elif direction == 2:
+        elif direction == sheet.DirectionX.RIGHT:
             position_x += sheet.STEP
         return position_x
